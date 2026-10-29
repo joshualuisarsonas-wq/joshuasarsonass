@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joshua Sarsonas | Marketer · Graphic Designer · Video Editor</title>
+<meta name="description" content="Portfolio and professional profile of Joshua Sarsonas, digital marketer and graphic designer based in Cebu City.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden}
+.pg{--ac:#C73E27;--ink:#2E1A33;--mu:#5E4B5C;--bd:#F0DDD2;--hl:#FFC857;font-family:'Space Grotesk',system-ui,sans-serif;background-color:#FFE6D3;background-image:radial-gradient(#DDB9A5 2.2px,transparent 2.2px);background-size:28px 28px;color:var(--ink);line-height:1.6;overflow-x:hidden}
+.pg *{box-sizing:border-box}.pg a{text-decoration:none;color:inherit}
+.w{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+.nav{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
+.nav .w{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.logo{font-weight:700;font-size:18px;color:#fff}.logo b{color:var(--hl)}
+.links{display:flex;gap:28px;font-weight:500;color:#fff}.links a{color:#fff}.links a:hover{color:var(--hl)}
+.pill{display:inline-block;background:var(--hl);color:var(--ink)!important;padding:10px 22px;border-radius:999px;font-weight:700;transition:transform .2s,background .2s}
+.pill:hover{background:var(--ac);color:#fff!important;transform:translateY(-2px)}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding-top:clamp(40px,7vw,88px);padding-bottom:clamp(48px,7vw,88px)}
+.tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--ink);border-radius:999px;padding:6px 16px;font-weight:500;font-size:14px}
+.tag i{width:9px;height:9px;border-radius:50%;background:#2FA866;display:block}
+h1{font-size:clamp(42px,7.4vw,92px);line-height:.98;letter-spacing:-.04em;margin:22px 0;font-weight:700}
+mark{background:linear-gradient(transparent 58%,var(--hl) 58%);color:inherit;padding:0 4px}
+.lead{font-size:clamp(17px,2vw,21px);color:var(--mu);max-width:560px;margin:0 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 26px;border-radius:14px;font-weight:700;border:2px solid var(--ink);transition:transform .2s,box-shadow .2s,background .2s}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#fff!important}
+.btn.s{background:#fff}.btn:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--ink)}
+.ph{position:relative;max-width:380px;width:100%;margin:0 auto;aspect-ratio:1}
+.ph:before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--ac);transform:translate(16px,16px)}
+.ph img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:50%;border:4px solid var(--ink);display:block;transition:transform .4s}
+.ph:hover img{transform:rotate(-3deg) scale(1.03)}
+.stk{position:absolute;right:-8px;top:-10px;width:108px;height:108px;border-radius:50%;background:var(--hl);border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:14px;line-height:1.15;animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.band{background:var(--ac);color:#fff;transform:rotate(-1.6deg);margin:0 -20px;overflow:hidden;padding:16px 0;border-block:2px solid var(--ink)}
+.trk{display:flex;width:max-content;animation:mq 28s linear infinite;font-weight:700;font-size:clamp(18px,2.6vw,26px);text-transform:uppercase;letter-spacing:.02em;white-space:nowrap}
+.band:hover .trk{animation-play-state:paused}.trk span{padding:0 22px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-top:72px}
+.tile{border:2px solid var(--ink);border-radius:24px;padding:28px;transition:transform .25s,box-shadow .25s}
+.tile:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:8px 8px 0 var(--ink)}
+.tile b{display:block;font-size:clamp(44px,6vw,68px);line-height:1;letter-spacing:-.03em}
+.tile span{display:block;margin-top:8px;font-weight:500}
+.sec{padding-top:clamp(64px,9vw,112px);scroll-margin-top:70px}
+.k{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+h2{font-size:clamp(32px,5vw,56px);letter-spacing:-.03em;line-height:1.05;margin:8px 0 36px}
+details{background:#fff;border:2px solid var(--ink);border-radius:20px;margin-bottom:14px;transition:box-shadow .2s}
+details:hover{box-shadow:6px 6px 0 var(--ink)}
+summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:22px 26px}
+summary::-webkit-details-marker{display:none}
+.sm{flex:1}.sm b{display:block;font-size:clamp(19px,2.4vw,24px);line-height:1.2}.sm em{font-style:normal;color:var(--ac);font-weight:700}
+.dt{color:var(--mu);font-size:14px;text-align:right}
+.ch{width:34px;height:34px;flex:none;border-radius:50%;background:var(--hl);border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:700;transition:transform .3s}
+details[open] .ch{transform:rotate(45deg);background:var(--ac);color:#fff}
+.dd{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.4,0,.2,1)}.dd-inner{overflow:hidden;padding:0 26px}details[open]>.dd{grid-template-rows:1fr}.dd-inner ul{margin:0 0 24px;padding-left:20px;color:var(--mu)}.dd li{margin-bottom:8px}details[open] .dd{grid-template-rows:1fr}
+.sub{font-size:22px;font-weight:700;margin:40px 0 16px}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:18px}
+.sk{background:#fff;border:2px solid var(--ink);border-radius:22px;padding:26px;transition:all .25s}
+.sk small{color:var(--ac);font-weight:700}.sk b{display:block;font-size:20px;margin:6px 0}.sk p{margin:0;color:var(--mu)}
+.sk:hover{background:var(--ink);color:#fff;transform:translateY(-6px)}.sk:hover p{color:#E9D8E6}.sk:hover small{color:var(--hl)}
+.tabs input{position:absolute;opacity:0;pointer-events:none}
+.tl{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.tl label{cursor:pointer;border:2px solid var(--ink);background:#fff;border-radius:999px;padding:9px 20px;font-weight:700;transition:all .2s}
+.tl label:hover{background:var(--hl)}
+.pp>div{display:none;flex-wrap:wrap;gap:10px}
+.chip{background:#fff;border:1.5px solid var(--bd);border-radius:12px;padding:10px 18px;font-weight:500;transition:transform .2s,border-color .2s}
+.chip:hover{transform:translateY(-3px) rotate(-2deg);border-color:var(--ac)}
+.pc{display:flex;flex-direction:column;background:#fff;border:2px solid var(--ink);border-radius:22px;padding:26px;min-height:200px;transition:transform .25s,box-shadow .25s,background .25s}
+.pc small{font-weight:700;color:var(--ac)}.pc b{font-size:22px;line-height:1.2;margin:8px 0}.pc p{color:var(--mu);margin:0 0 auto}
+.pc u{text-decoration:none;font-weight:700;margin-top:18px;display:flex;justify-content:space-between}
+.pc u i{font-style:normal;transition:transform .25s}
+.pc:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--ac);background:#FFFBF8}.pc:hover u i{transform:translateX(8px)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.co{display:flex;flex-wrap:wrap;gap:10px}.co span{border:2px solid var(--ink);border-radius:999px;padding:8px 18px;font-weight:700;background:#fff}
+.ct{background:var(--ink);color:#fff;margin-top:clamp(64px,9vw,112px);padding:clamp(56px,8vw,96px) 0}
+.ct h2{font-size:clamp(38px,8vw,104px);margin:10px 0 28px}.ct .k{color:var(--hl)}
+.em{display:inline-block;font-size:clamp(18px,3.2vw,34px);font-weight:700;border-bottom:3px solid var(--hl);word-break:break-all;transition:color .2s}.em:hover{color:var(--hl)}
+.ct .btn{border-color:#fff;color:#fff}.ct .btn:hover{box-shadow:5px 5px 0 var(--hl)}
+@keyframes pagein{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.pg{animation:pagein .9s cubic-bezier(.22,1,.36,1) both}
+to{opacity:1;transform:none}}
+}
+@media (prefers-reduced-motion:reduce){.trk,.stk{animation:none}}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:40px}.ph{max-width:300px}.two{grid-template-columns:1fr}.bento{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.links{display:none}.bento{grid-template-columns:1fr}.dt{display:none}summary{padding:18px}.dd{padding:0 18px 20px}.band{margin:0 -30px}}
+#t0:checked~.tl label[for=t0]{background:var(--ac);border-color:var(--ac);color:#fff}#t0:checked~.pp .p0{display:flex}
+#t1:checked~.tl label[for=t1]{background:var(--ac);border-color:var(--ac);color:#fff}#t1:checked~.pp .p1{display:flex}
+#t2:checked~.tl label[for=t2]{background:var(--ac);border-color:var(--ac);color:#fff}#t2:checked~.pp .p2{display:flex}
+#t3:checked~.tl label[for=t3]{background:var(--ac);border-color:var(--ac);color:#fff}#t3:checked~.pp .p3{display:flex}
+#t4:checked~.tl label[for=t4]{background:var(--ac);border-color:var(--ac);color:#fff}#t4:checked~.pp .p4{display:flex}
+
+.seg{padding-bottom:clamp(64px,9vw,112px);border-top:1px solid var(--bd)}
+.seg.s1{background-color:#FFF4EA;background-image:radial-gradient(rgba(46,26,51,.07) 1px,transparent 1.3px);background-size:16px 16px}
+.seg.s3{background-color:#FFD2B3;background-image:radial-gradient(rgba(46,26,51,.07) 1px,transparent 1.3px);background-size:16px 16px}
+.ct{margin-top:0!important;border-top:1px solid var(--bd)}
+.sec{padding-top:clamp(56px,8vw,96px)}
+.k,.sm em,.sk small,.pc small{color:#A8321E}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1000px){.g4{grid-template-columns:1fr 1fr}}@media (max-width:600px){.g4{grid-template-columns:1fr}}
+@media (max-width:640px){.g4{grid-template-columns:1fr}}
+
+@media (max-width:900px){
+  .hero{display:flex;flex-direction:column;align-items:center;text-align:center}
+  .ph{order:-1;margin-bottom:16px}
+  .mobile-name{display:block;font-size:26px;font-weight:700;margin:4px 0 10px;letter-spacing:-.02em}
+  .tag{margin:0 auto 4px}
+  .btns{justify-content:center}
+  .lead{margin-left:auto;margin-right:auto}
+}
+@media (min-width:901px){.mobile-name{display:none}}
+
+.rv{opacity:0;transform:translateY(40px);transition:opacity .65s cubic-bezier(.4,0,.2,1),transform .65s cubic-bezier(.4,0,.2,1)}
+.rv.in{opacity:1;transform:none}
+</style>
+
+</head>
+<body>
+<div class="pg" style="--ac: #C73E27">
+<div class="nav"><div class="w"><a class="logo" href="#top">Joshua<b>.</b>Sarsonas</a><div class="links"><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#toolkit">Toolkit</a><a href="#portfolio">Portfolio</a></div><a class="pill" href="#contact">Let’s talk</a></div></div>
+<div class="w hero" id="top"><div><span class="mobile-name">Joshua Sarsonas</span><span class="tag" style="font-size: 20px; font-weight: 700"><i></i>JOSHUA SARSONAS</span><h1>Marketing that sells. <mark>Design</mark> that sticks.</h1><p class="lead">Digital marketer and graphic designer with 8 years across social, brand and content.</p><div class="btns"><a class="btn p" href="#portfolio">View my portfolio</a><a class="btn s" href="#contact">Get in touch</a><a class="btn s" href="Joshua_Sarsonas_Resume.pdf" target="_blank" rel="noopener">Download PDF Resume</a></div></div>
+<div class="ph"><img src="photo.jpg" alt="Portrait of Joshua Luis Sarsonas"><div class="stk" style="font-size: 15px">8 years<br>in marketing</div></div></div>
+<div class="band"><div class="trk"><span>Social Media ✦</span><span>Paid Social ✦</span><span>Branding ✦</span><span>Graphic Design ✦</span><span>Video Editing ✦</span><span>Email &amp; CRM ✦</span><span>Reporting ✦</span><span>Social Media ✦</span><span>Paid Social ✦</span><span>Branding ✦</span><span>Graphic Design ✦</span><span>Video Editing ✦</span><span>Email &amp; CRM ✦</span><span>Reporting ✦</span><span>Social Media ✦</span><span>Paid Social ✦</span><span>Branding ✦</span><span>Graphic Design ✦</span><span>Video Editing ✦</span><span>Email &amp; CRM ✦</span><span>Reporting ✦</span><span>Social Media ✦</span><span>Paid Social ✦</span><span>Branding ✦</span><span>Graphic Design ✦</span><span>Video Editing ✦</span><span>Email &amp; CRM ✦</span><span>Reporting ✦</span></div></div>
+
+<div class="seg s1" style=""><div class="w bento"><div class="tile" style="background:var(--ac);color:#fff"><b>8 years</b><span>in marketing</span></div><div class="tile" style="background:var(--ink);color:#fff"><b>1+ year</b><span>using AI software and prompt chaining</span></div><div class="tile" style="background:var(--hl)"><b>5 years</b><span>in graphic design</span></div></div><div class="w sec rv" id="experience"><div class="k">Career</div><h2>Experience</h2><details open=""><summary><div class="sm"><b>Marketing Officer</b><em>JVM Lending, Inc.</em></div><div class="dt">Nov 2024 — Sept 2026<br>Remote (WFH)</div><div class="ch">+</div></summary><div class="dd"><div class="dd-inner"><ul><li>Edited daily blogs written by the company’s CEO and published via WordPress and HubSpot for website and email.</li><li>Maintained WordPress SEO scores through keyword research, tags, and alt-text optimization.</li><li>Built a full video production process from scratch — scripting, visual content, AI audio, tags, and thumbnails.</li><li>Monitored and produced weekly reports on social media page performance through Sprout Social.</li><li>Produced an average of 60–80 finance flyers per week intended for realtors.</li><li>Handled Investment Spotlights, Tuesday Rate Quotes, and other email marketing initiatives on behalf of the CEO.</li></ul></div></div></details><details><summary><div class="sm"><b>Graphic Designer 3</b><em>My Amazon Guy</em></div><div class="dt">Jul 2023 — Sep 2024<br>Remote (WFH)</div><div class="ch">+</div></summary><div class="dd"><div class="dd-inner"><ul><li>Managed design and branding for multiple clients’ brands simultaneously.</li><li>Created Listing Images, A+ Contents, Virtual Bundles, Premium A+ Contents, Brand Stores, and Brand Story assets.</li><li>Handled client design meetings to ensure design efficiency and alignment.</li><li>Created branding identities for new clients from concept to completion.</li><li>Maintained quality designs that strictly follow Amazon Guidelines.</li><li>Collaborated with Project Managers and Brand Managers to produce unique and effective designs.</li></ul></div></div></details><details><summary><div class="sm"><b>Marketing Officer &amp; Graphic Designer</b><em>Priland Development Corp.</em></div><div class="dt">May 2019 — Jul 2023<br>On-site</div><div class="ch">+</div></summary><div class="dd"><div class="dd-inner"><ul><li>Managed and formulated all Marketing Initiatives &amp; Campaigns across different Real Estate Developments.</li><li>Conducted market and competitor research for strategic purposes.</li><li>Analyzed sales data and made recommendations to management.</li><li>Designed Real Estate Projects’ brand presentations and marketing collaterals for digital and print media.</li><li>Planned, managed, and executed marketing activities and campaigns end-to-end.</li><li>Closely monitored the effectiveness of campaigns across different brands and projects.</li></ul></div></div></details><details><summary><div class="sm"><b>Partnership &amp; Communications Officer</b><em>Mynimo, Inc.</em></div><div class="dt">Dec 2017 — Apr 2019<br>On-site</div><div class="ch">+</div></summary><div class="dd"><div class="dd-inner"><ul><li>Formulated both digital and traditional marketing campaigns to increase website users.</li><li>Executed marketing efforts in line with company Marketing Initiatives.</li><li>Planned and strategized digital content for social media and website.</li><li>Conducted seminars and talks in various academic institutions.</li><li>Organized and spearheaded marketing events to increase brand awareness.</li></ul></div></div></details><div class="sub">Consultancy</div><details><summary><div class="sm"><b>Marketing Head</b><em>Prowl Events</em></div><div class="dt">Dec 2022 - 2025<br>Cebu City, Philippines</div><div class="ch">+</div></summary><div class="dd"><div class="dd-inner"><ul><li>Led the whole marketing team in planning and executing marketing initiatives.</li><li>Managed a team of creatives and delegated tasks across the team.</li><li>Developed social media strategies to increase brand awareness and sales conversion.</li><li>Led the external brand partnerships for the events.</li></ul></div></div></details><details><summary><div class="sm"><b>Event Director</b><em>BaiCon: The Pocket Dance Competition</em></div><div class="dt">Jan 2026 — May 2026</div><div class="ch">+</div></summary><div class="dd"><div class="dd-inner"><ul><li>Spearheaded the production, logistics, external communications, and event teams in organizing the event.</li><li>Delegated tasks to each department and staff for overall functionality.</li><li>Led the entire event program during event day.</li><li>Made sure quality, responsibilities, and deadlines were being followed.</li></ul></div></div></details></div></div>
+<div class="seg s2" style=" width: 1624px"><div class="w sec rv" id="skills"><div class="k">Expertise</div><h2>What I do</h2><div class="g3 g4"><div class="sk"><small>01</small><b>Social media management</b><p>Content planning and publishing across projects and platforms.</p></div><div class="sk"><small>02</small><b>Paid social</b><p>Monthly Meta ad campaigns for lead generation.</p></div><div class="sk"><small>03</small><b>Graphic design and branding</b><p>Brand identities, presentations, print and Amazon listing design.</p></div><div class="sk"><small>04</small><b>Video editing</b><p>Editing videos for social media and brand content, from raw footage to polished cuts, captions and thumbnails.</p></div><div class="sk"><small>05</small><b>Email and CRM</b><p>HubSpot and Mailchimp automation to nurture leads.</p></div><div class="sk"><small>06</small><b>Reporting and research</b><p>Weekly performance reports, market and competitor research.</p></div><div class="sk"><small>07</small><b>AI-assisted content</b><p>Using AI tools for scripts, visuals, voiceovers and subtitles to produce content faster, while keeping the brand voice and quality in check.</p></div><div class="sk"><small>08</small><b>AI Prompt Chaining</b><p>Follows a multi-model workflow called Prompt Chaining (specifically, cross-model orchestration or inter-agent handoff).</p></div></div></div></div>
+<div class="seg s3"><div class="w sec rv" id="toolkit"><div class="k">Software</div><h2>Toolkit</h2><div class="tabs"><input type="radio" name="tk" id="t0" checked=""><input type="radio" name="tk" id="t1"><input type="radio" name="tk" id="t2"><input type="radio" name="tk" id="t3"><input type="radio" name="tk" id="t4"><div class="tl"><label for="t0">Design</label><label for="t1">AI Softwares</label><label for="t2">Email</label><label for="t3">Social Media Management</label><label for="t4">Other tools</label></div><div class="pp"><div class="p0"><span class="chip">Adobe Photoshop</span><span class="chip">Adobe Illustrator</span><span class="chip">Adobe Premiere Pro</span><span class="chip">Adobe Lightroom</span><span class="chip">Figma</span><span class="chip">Canva</span><span class="chip">CapCut Pro</span><span class="chip">Descript</span></div><div class="p1"><span class="chip">Claude</span><span class="chip">ChatGPT</span><span class="chip">Higgsfield</span></div><div class="p2"><span class="chip">Mailchimp</span><span class="chip">HubSpot</span><span class="chip">Salesforce</span></div><div class="p3"><span class="chip">Sprout Social</span><span class="chip">Buffer</span><span class="chip">Meta</span></div><div class="p4"><span class="chip">WordPress</span><span class="chip">Wix</span><span class="chip">Google Ads</span><span class="chip">Asana</span><span class="chip">Trello</span><span class="chip">Airtable</span><span class="chip">Google Suite</span><span class="chip">Microsoft Office</span></div></div></div></div></div>
+<div class="seg s1"><div class="w sec rv" id="portfolio"><div class="k">Selected work</div><h2>Portfolio</h2><div class="g3"><a class="pc" href="https://drive.google.com/drive/folders/1b51Pc6n980chzXUxkcAUV0-joC8RPdca?usp=sharing" target="_blank" rel="noopener"><small>01</small><b>E-Commerce</b><p>Amazon listing images, Premium A+ content, A+ content, Brand Stores and more.</p><u>Open folder <i>→</i></u></a><a class="pc" href="https://drive.google.com/drive/folders/1AJoLCO7DhzonbfmDTC0cTVFZtHjyDoh8?usp=sharing" target="_blank" rel="noopener"><small>02</small><b>Branding and Logo Design</b><p>Brands managed and logos designed.</p><u>Open folder <i>→</i></u></a><a class="pc" href="https://drive.google.com/drive/folders/1U14i6p3FB1yxTEp62K8EvZGaQ1EYlt0Q?usp=sharing" target="_blank" rel="noopener"><small>03</small><b>Presentation Decks</b><p>Property presentations, event presentations and more.</p><u>Open folder <i>→</i></u></a><a class="pc" href="https://drive.google.com/drive/folders/1Wy_ilksY_5zaUy4_nBob39yZeSw5agxs?usp=sharing" target="_blank" rel="noopener"><small>04</small><b>Posters, Infographics, Social Media</b><p>Social media posters, print media, flyers and more.</p><u>Open folder <i>→</i></u></a><a class="pc" href="https://drive.google.com/drive/folders/1BgsKw7QMpBSqLqysqGwbTePXOYnJmM5H?usp=sharing" target="_blank" rel="noopener"><small>05</small><b>Videos</b><p>Video edits.</p><u>Open folder <i>→</i></u></a><a class="pc" href="https://drive.google.com/drive/folders/1x63I-PEa3-PCqq71JA47RMhP4qn08cb3?usp=sharing" target="_blank" rel="noopener"><small>06</small><b>Thumbnails</b><p>Video thumbnails and social media thumbnails.</p><u>Open folder <i>→</i></u></a><a class="pc" href="https://drive.google.com/drive/folders/1VuS4LjzAKgHEGMbbwM-GrLfGvcpadypH?usp=sharing" target="_blank" rel="noopener"><small>07</small><b>Shirt Designs</b><p>Apparel and shirt designs.</p><u>Open folder <i>→</i></u></a></div></div></div>
+<div class="seg s2"><div class="w sec rv"><div class="two"><div><div class="k">Education</div><h2 style="font-size:clamp(26px,3.4vw,36px)">BS Management Accounting</h2><div style="color:var(--mu)">University of San Jose - Recoletos, Cebu City · 2013 – 2017</div></div><div><div class="k">Companies</div><h2 style="font-size:clamp(26px,3.4vw,36px)">I’ve worked with</h2><div class="co"><span>JVM Lending</span><span>My Amazon Guy</span><span>Priland Development Corp.</span><span>Mynimo</span><span>Prowl Events</span></div></div></div></div></div>
+<div class="ct" id="contact"><div class="w"><div class="k">Contact</div><h2>Let’s work together.</h2><a class="em" href="mailto:joshualuisarsonas@gmail.com">joshualuisarsonas@gmail.com</a><div class="btns" style="margin-top:32px"><a class="btn" href="Joshua_Sarsonas_Resume.pdf" target="_blank" rel="noopener">Download PDF Resume</a><a class="btn" href="#top">Back to top ↑</a></div></div></div>
+</div>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!els.length) return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');}
+      else{e.target.classList.remove('in');}
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
